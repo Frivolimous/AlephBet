@@ -355,7 +355,7 @@ var TextureData = (function () {
     return TextureData;
 }());
 var hebrewLetters = {
-    aleph: PIXI.Texture.fromImage("assets/white_aleph.png", , 1, 1),
+    aleph: PIXI.Texture.fromImage("assets/white_aleph.png"),
 };
 var CONFIG = (function () {
     function CONFIG() {

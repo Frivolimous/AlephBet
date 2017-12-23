@@ -248,7 +248,7 @@ var GameManager = (function () {
                 var _object = new AlephObject;
                 facade.game.objects.addObject(_object);
                 _object.goto(e.mouse.x, e.mouse.y);
-                var sound = new Audio("assets/Aleph.m4a");
+                var sound = new Audio("assets/Aleph.mp3");
                 sound.play();
                 _this.step = 1;
             }
@@ -256,7 +256,7 @@ var GameManager = (function () {
                 _this.step = -1;
                 var _object = _this.objects.getObjectAt(0);
                 JMBL.tweenColor(_object, 5, { tint: 0xff8888 }, function () { JMBL.tweenColor(this, 5, { delay: 100, tint: 0xcc55cc }, function () { self.step = 2; }); });
-                var sound = new Audio("assets/PinkPurple.m4a");
+                var sound = new Audio("assets/PinkPurple.mp3");
                 sound.play();
             }
             else if (_this.step == 2) {
@@ -264,7 +264,7 @@ var GameManager = (function () {
                 _object_1.colorFlash(0x00ff00);
                 JMBL.tweenWait(_object_1, 30, function () { JMBL.tweenTo(this, 20, { alpha: 0 }, function () { _object_1.dispose(); }); });
                 _this.step = 0;
-                var sound = new Audio("assets/GoodJob.m4a");
+                var sound = new Audio("assets/GoodJob.mp3");
                 sound.play();
             }
             else {
@@ -355,7 +355,7 @@ var TextureData = (function () {
     return TextureData;
 }());
 var hebrewLetters = {
-    aleph: PIXI.Texture.fromImage("assets/white_aleph.png"),
+    aleph: PIXI.Texture.fromImage("http://engineering.lumosity.com/aleph/images/white_aleph.png"),
 };
 var CONFIG = (function () {
     function CONFIG() {

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "none",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outFile": "./game.js",
+    "target": "es5",
+  },
+  "include": [
+    "./src/**/*",
+    "./src/*"
+  ],
+  
+  "files": [/*"./src/JMGE/InputManager.ts",
+            "./src/JMGE/JMBL.ts",
+            "./src/JMGE/JMEvents.ts",*/
+            "./src/JMGE/ObjectManager.ts",
+            
+            /*"./src/GameManager.ts",
+
+            "./src/GraphicData.ts",
+            
+            "./src/GameObjectSandbox.ts",
+
+            "./src/initialize.ts"*/]
+}

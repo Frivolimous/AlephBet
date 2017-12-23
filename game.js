@@ -261,7 +261,7 @@ var GameManager = (function () {
             }
             else if (_this.step == 2) {
                 var _object_1 = _this.objects.getObjectAt(0);
-                _object_1.colorFlash(0x00ff00);
+                _object_1.colorFlash(0xff8888);
                 JMBL.tweenWait(_object_1, 30, function () { JMBL.tweenTo(this, 20, { alpha: 0 }, function () { _object_1.dispose(); }); });
                 _this.step = 0;
                 var sound = new Audio("assets/GoodJob.mp3");
